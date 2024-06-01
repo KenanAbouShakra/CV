@@ -56,6 +56,19 @@
 
         return obj;
     }
+    
+    document.addEventListener("DOMContentLoaded", function() {
+    const addressElement = document.getElementById("address");
+
+    addressElement.addEventListener("click", function() {
+        if (addressElement.style.display === "none" || addressElement.style.display === "") {
+            addressElement.style.display = "block";
+        } else {
+            addressElement.style.display = "none";
+        }
+    });
+});
+
 
     function _objectSpread(target) {
         for (var i = 1; i < arguments.length; i++) {
