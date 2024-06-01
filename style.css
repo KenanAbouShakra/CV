@@ -136,7 +136,7 @@ p {
 
 .main-wrapper .experiences-section .item {
     margin-bottom: 30px;
-    display: block;
+    display: inline-block;
 }
 
 .footer {
