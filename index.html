@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="favicon.ico" />
     <!-- Google Font -->
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    <!-- FontAwesome JS-->
+    <!-- FontAwesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA9IRp7nR/jM9kjmB6FEeb0os5F4xXedD6Hf9E5cF/uz/UbjE6JK9eo4pHJbkBi" crossorigin="anonymous"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -21,32 +21,45 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 
     <style>
-        /* Sticky Navbar */
         .navbar {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            background-color: #fff;
-            border-bottom: 1px solid #ddd;
+            background-color: #343a40;
+            color: #fff;
         }
 
-        .profile-img {
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-brand img {
             width: 50px;
             height: 50px;
             border-radius: 50%;
+            margin-right: 15px;
         }
 
-        .nav-item {
-            margin-left: 10px;
+        .navbar-nav .nav-link {
+            color: #fff !important;
+        }
+
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        .contact-container a:hover {
+            text-decoration: underline;
+            color: blue;
         }
     </style>
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">
-            <img src="IMG.JPG" alt="Profile Picture" class="profile-img">
+            <img src="IMG.JPG" alt="Profile Picture">
             Kenan Abou Shakra - Dataingeniør
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -141,10 +154,111 @@
                     <div class="item">
                         <h3 class="level-title">Java</h3>
                     </div>
+                    <div class="item">
+                        <h3 class="level-title">SQL</h3>
+                    </div>
+                    <div class="item">
+                        <h3 class="level-title">Python</h3>
+                    </div>
+                    <div class="item">
+                        <h3 class="level-title">C#</h3>
+                    </div>
+                    <div class="item">
+                        <h3 class="level-title">Linux & PowerShell</h3>
+                    </div>
+                    <div class="item">
+                        <h3 class="level-title">HTML, Bootstrap & CSS</h3>
+                    </div>
+                    <div class="item">
+                        <h3 class="level-title">JavaScript, JQuery og TypeScript</h3>
+                    </div>
+                    <div class="item">
+                        <h3 class="level-title">GitHub og DevOps</h3>
+                    </div>
+                </div>
+            </section>
+            <section id="experience" class="section experiences-section">
+                <h2 class="section-title"><span class="icon-holder"><i class="fas fa-briefcase"></i></span>Arbeidshistorikk</h2>
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">Studentassistent</h3>
+                            <div class="time">Januar 2022</div>
+                        </div>
+                        <div class="company">OsloMet, Oslo</div>
+                    </div>
+                    <div class="details">
+                        <p>Undervisning i webprogrammering, algoritmer og datastruktur og matematikk over 7 semestre.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">Lærer og Tolk</h3>
+                            <div class="time">Oktober 2020</div>
+                        </div>
+                        <div class="company">Drammen kommune, Drammen</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">Matematikklærer</h3>
+                            <div class="time">August 2018 — Juli 2019</div>
+                        </div>
+                        <div class="company">USN, Drammen</div>
+                    </div>
+                    <div class="details">
+                        <p>Jeg var øvingslærer i matematikk.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">Matematikklærer</h3>
+                            <div class="time">September 2010- November 2015</div>
+                        </div>
+                        <div class="company">Videregående skoler (Kuwait).</div>
+                    </div>
+                </div>
+            </section>
+            <section id="projects" class="section projects-section">
+                <h2 class="section-title"><span class="icon-holder"><i class="fas fa-archive"></i></span>Prosjekter</h2>
+                <div class="intro">
+                    <p>Her er et utvalg av prosjekter jeg har jobbet med:</p>
+                </div>
+                <div class="item">
+                    <span class="project-title"><a href="https://github.com/KenanAbouShakra/H_renting.git" target="_blank">Prosjekt 1</a></span> - <span class="project-tagline">Utvikling av en full-stack webapplikasjon ved hjelp av Angular og .NET.</span>
+                </div>
+                <div class="item">
+                    <span class="project-title"><a href="https://drive.google.com/file/d/10F4QaNWI6azTSgTJVH2SAzUVguETU-mq/view?usp=drive_link" target="_blank">Prosjekt 2</a></span> - <span class="project-tagline">Automatisering av dataanalyse ved bruk av Python og SQL.</span>
+                </div>
+                <div class="item">
+                    <span class="project-title"><a href="https://github.com/KenanAbouShakra/Dialoger.git" target="_blank">Prosjekt 3</a></span> - <span class="project-tagline">Utvikling av en mobilapp med Java og Android Studio.</span>
+                </div>
+            </section>
+            <section id="files" class="section files-section">
+                <h2 class="section-title"><span class="icon-holder"><i class="fas fa-file"></i></span>Mine Filer</h2>
+                <div class="item">
+                    <span class="file-title"><a href="https://drive.google.com/file/d/1F-wpOqox4d8E_YVLBUiqs5cdA-KwH-3a/view?usp=drive_link" target="_blank">Fil 1</a></span> - <span class="file-description">CV</span>
+                </div>
+                <div class="item">
+                    <span class="file-title"><a href="https://drive.google.com/file/d/1ePSlitSCNT67fYMoCGVyAVO5PJ_8Pkyp/view?usp=drive_link" target="_blank">Fil 2</a></span> - <span class="file-description">Vitnemål</span>
+                </div>
+                <div class="item">
+                    <span class="file-title"><a href="https://drive.google.com/file/d/1f2dL6PxctfnLe32Jm4yJoubMUfcgex3r/view?usp=drive_link" target="_blank">Fil 3</a></span> - <span class="file-description">Resultater fra vitnemålsportalen</span>
+                </div>
+                <div class="item">
+                    <span class="file-title"><a href="https://drive.google.com/file/d/13lovwSv64WraFGWL1N0h2jXPE5Nrv0Y6/view?usp=drive_link" target="_blank">Fil 4</a></span> - <span class="file-description">Bachelorgrad</span>
                 </div>
             </section>
         </div>
     </div>
+    <footer class="footer">
+        <div class="text-center">
+            <small class="copyright">© 2024 Kenan Abou Shakra</small>
+        </div>
+    </footer>
 </body>
 
 </html>
