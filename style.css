@@ -154,12 +154,13 @@ p {
         position: static;
         width: 100%;
         min-height: auto;
-        padding: 20px 0;
+        padding: 20px;
     }
     .main-wrapper {
-        padding: 30px;
+        padding: 20px;
         padding-top: 60px;
-        padding-right: 30px;
+        padding-right: 20px;
+        padding-left: 20px; /* Adding padding to the left */
     }
     .main-wrapper .time {
         position: static;
