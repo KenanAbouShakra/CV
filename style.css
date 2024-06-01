@@ -158,12 +158,12 @@ p {
     position: static;
     width: 100%;
     min-height: auto;
-    padding: inherit;
+    padding: 30px;
   }
   .main-wrapper {
     padding: 30px;
     padding-top: 60px;
-    
+
   }
   .main-wrapper .time {
     position: static;
@@ -187,7 +187,7 @@ p {
 @media (min-width: 767.98px) {
   .sidebar-wrapper {
     right: 0;
-    padding: inherit;
+    padding: 30px;
   }
   .main-wrapper {
     padding: 60px;
