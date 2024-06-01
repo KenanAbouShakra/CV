@@ -186,7 +186,7 @@ p {
 
 @media (min-width: 767.98px) {
     .sidebar-wrapper {
-         padding: 30px; 
+         padding: 20px 0;
         right: 0;
     }
     .main-wrapper {
