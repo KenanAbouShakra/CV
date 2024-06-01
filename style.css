@@ -150,6 +150,9 @@ p {
 }
 
 @media (max-width: 767.98px) {
+    .wrapper {
+        padding: 20px;
+    }
     .sidebar-wrapper {
         position: static;
         width: 100%;
@@ -160,7 +163,7 @@ p {
         padding: 20px;
         padding-top: 60px;
         padding-right: 20px;
-        padding-left: 20px; /* Adding padding to the left */
+        padding-left: 20px;
     }
     .main-wrapper .time {
         position: static;
