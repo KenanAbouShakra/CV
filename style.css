@@ -63,6 +63,7 @@ p {
     color: #ffffff;
     padding: 20px;
 }
+
 .profile-img {
     width: 150px;
     height: 150px;
@@ -159,20 +160,12 @@ p {
         position: static;
         width: 100%;
         min-height: auto;
-        padding: 20px 0;
+        padding: 40px; 
     }
     .main-wrapper {
         padding: 30px;
         padding-top: 60px;
         padding-right: 30px;
-    }
-    .main-wrapper .time {
-        position: static;
-        display: block;
-        margin-top: 5px;
-    }
-    .main-wrapper .upper-row {
-        margin-bottom: 0;
     }
 }
 
@@ -183,27 +176,4 @@ p {
         width: 30%;
         margin-bottom: 0;
     }
-}
-
-@media (max-width: 767.98px) {
-    .sidebar-wrapper {
-        position: static;
-        width: 100%;
-        min-height: auto;
-        padding: 40px; 
-    }
-    .main-wrapper {
-        padding: 30px;
-        padding-top: 60px;
-        padding-right: 30px;
-    }
-}
-
-#address {
-    cursor: pointer;
-}
-
-#address:hover {
-    text-decoration: underline;
-    color: #0056b3;
 }
