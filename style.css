@@ -67,8 +67,7 @@ p {
 .profile-img {
     width: 150px;
     height: 150px;
-    /* Kvadratisk bilde */
-    border-radius: 10%;
+    border-radius: 50%; /* Endret for å gjøre bildet sirkulært */
     object-fit: cover;
     margin: 0 auto 20px;
     display: block;
@@ -161,7 +160,7 @@ p {
         position: static;
         width: 100%;
         min-height: auto;
-        padding: 20px 0;
+        padding: 20px 10px; /* Endret padding for små skjermer */
     }
     .main-wrapper {
         padding: 30px;
