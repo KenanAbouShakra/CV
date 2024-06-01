@@ -67,7 +67,7 @@ p {
 .profile-img {
     width: 150px;
     height: 150px;
-    border-radius: 50%; /* Endret for å gjøre bildet sirkulært */
+    border-radius: 50%;
     object-fit: cover;
     margin: 0 auto 20px;
     display: block;
@@ -160,7 +160,7 @@ p {
         position: static;
         width: 100%;
         min-height: auto;
-        padding: 20px 10px; /* Endret padding for små skjermer */
+        padding: 20px 0;
     }
     .main-wrapper {
         padding: 30px;
@@ -194,4 +194,13 @@ p {
         padding: 60px;
         padding-left: 360px;
     }
+}
+
+#address {
+    cursor: pointer;
+}
+
+#address:hover {
+    text-decoration: underline;
+    color: #0056b3;
 }
