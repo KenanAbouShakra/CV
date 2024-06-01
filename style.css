@@ -56,7 +56,7 @@ p {
 .sidebar-wrapper {
     background: #343a40;
     position: absolute;
-    left: 0;
+    right: 0;
     width: 300px;
     height: 100%;
     min-height: 800px;
@@ -67,7 +67,8 @@ p {
 .profile-img {
     width: 150px;
     height: 150px;
-    border-radius: 50%;
+    /* Kvadratisk bilde */
+    border-radius: 10%;
     object-fit: cover;
     margin: 0 auto 20px;
     display: block;
@@ -135,7 +136,6 @@ p {
 
 .main-wrapper .experiences-section .item {
     margin-bottom: 30px;
-    display: inline-block;
 }
 
 .footer {
@@ -160,12 +160,20 @@ p {
         position: static;
         width: 100%;
         min-height: auto;
-        padding: 40px; 
+        padding: 20px 0;
     }
     .main-wrapper {
         padding: 30px;
         padding-top: 60px;
         padding-right: 30px;
+    }
+    .main-wrapper .time {
+        position: static;
+        display: block;
+        margin-top: 5px;
+    }
+    .main-wrapper .upper-row {
+        margin-bottom: 0;
     }
 }
 
@@ -175,5 +183,16 @@ p {
         float: left;
         width: 30%;
         margin-bottom: 0;
+    }
+}
+
+@media (min-width: 767.98px) {
+    .sidebar-wrapper {
+        padding: 20px 0;
+        left: 0;
+    }
+    .main-wrapper {
+        padding: 60px;
+        padding-left: 360px;
     }
 }
