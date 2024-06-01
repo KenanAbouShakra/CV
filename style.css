@@ -67,8 +67,7 @@ p {
 .profile-img {
     width: 150px;
     height: 150px;
-    /* Kvadratisk bilde */
-    border-radius: 10%;
+    border-radius: 50%;
     object-fit: cover;
     margin: 0 auto 20px;
     display: block;
@@ -187,7 +186,7 @@ p {
 
 @media (min-width: 767.98px) {
     .sidebar-wrapper {
-        padding: 20px 0;
+         padding: 30px; 
         right: 0;
     }
     .main-wrapper {
