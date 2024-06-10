@@ -11,12 +11,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   margin: 0 0 10px;
 }
@@ -88,23 +83,6 @@ p {
 .title {
   font-size: 18px;
   margin: 10px 0;
-}
-
-@media (min-width: 768px) {
-  .profile-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .profile-img {
-    margin-right: 20px;
-    margin-bottom: 0;
-  }
-
-  .profile-info {
-    text-align: left;
-  }
 }
 
 .phone a {
@@ -238,4 +216,27 @@ p {
   .main-wrapper {
     padding: 60px;
   }
+}
+
+.files-list {
+  padding: 0;
+  list-style: none;
+}
+
+.files-list .item {
+  margin-bottom: 10px;
+}
+
+.files-list .item .fas {
+  margin-right: 5px;
+}
+
+.files-list .item a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.files-list .item a:hover {
+  text-decoration: underline;
+  color: #0056b3;
 }
