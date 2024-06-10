@@ -133,7 +133,18 @@ p {
 .main-wrapper .experiences-section .item {
   margin-bottom: 30px;
 }
+.name {
+  font-size: 24px;
+  text-align: center;
+  margin: 10px 0;
+}
 
+@media (min-width: 992px) {
+  .name {
+    font-size: 20px; /* Slightly smaller font size for larger screens */
+    white-space: nowrap; /* Ensure the name stays on one line */
+  }
+}
 .footer {
   padding: 30px;
   padding-top: 60px;
