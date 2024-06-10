@@ -1,3 +1,5 @@
+/* Generelle stilregler */
+
 body {
   font-family: 'Roboto', sans-serif;
   color: #333333;
@@ -61,6 +63,10 @@ p {
   padding: 20px;
 }
 
+.profile-container {
+  text-align: center;
+}
+
 .profile-img {
   width: 150px;
   height: 150px;
@@ -68,6 +74,37 @@ p {
   object-fit: cover;
   margin: 0 auto 20px;
   display: block;
+}
+
+.profile-info {
+  text-align: center;
+}
+
+.name {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.title {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+@media (min-width: 768px) {
+  .profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .profile-img {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+
+  .profile-info {
+    text-align: left;
+  }
 }
 
 .phone a {
@@ -133,18 +170,14 @@ p {
 .main-wrapper .experiences-section .item {
   margin-bottom: 30px;
 }
-.name {
-  font-size: 24px;
-  text-align: center;
-  margin: 10px 0;
-}
 
 @media (min-width: 992px) {
   .name {
-    font-size: 20px; /* Slightly smaller font size for larger screens */
-    white-space: nowrap; /* Ensure the name stays on one line */
+    font-size: 20px; /* Litt mindre fontstørrelse for større skjermer */
+    white-space: nowrap; /* Sikrer at navnet forblir på én linje */
   }
 }
+
 .footer {
   padding: 30px;
   padding-top: 60px;
