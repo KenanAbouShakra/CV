@@ -80,6 +80,10 @@ p {
   margin: 10px 0;
 }
 
+.extra-jobs {
+  display: none;
+}
+
 .title {
   font-size: 18px;
   margin: 10px 0;
