@@ -83,6 +83,19 @@ p {
 .extra-jobs {
   display: none;
 }
+.show-more-link {
+  color: #007bff;
+  text-decoration: underline;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.show-more-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
 
 .title {
   font-size: 18px;
