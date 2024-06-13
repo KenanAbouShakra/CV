@@ -174,13 +174,6 @@ p {
     font-size: 20px; /* Litt mindre fontstørrelse for større skjermer */
     white-space: nowrap; /* Sikrer at navnet forblir på én linje */
   }
-   .skillset .item {
-    display: inline-block;
-    position: relative;
-    float: left;
-    width: 30%;
-    margin-bottom: 0; 
-  }
 }
 
 .footer {
