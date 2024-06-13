@@ -5,5 +5,6 @@ document.getElementById('show-more-btn').addEventListener('click', function() {
     this.textContent = 'Vis mindre';
   } else {
     extraJobs.style.display = 'none';
+    this.textContent = 'Vis mer';
   }
 });
