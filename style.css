@@ -96,6 +96,9 @@ p {
   text-decoration: underline;
 }
 
+.skillset .item {
+  margin-bottom: 10px;
+}
 
 .title {
   font-size: 18px;
