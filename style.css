@@ -84,7 +84,7 @@ a:hover {
   gap: 24px;
   min-height: 850px;
 
-  background: #ffffff;
+  background: beige;
   border-radius: 18px;
   box-shadow: 0 18px 45px rgba(15, 23, 42, 0.18);
   box-sizing: border-box;
@@ -460,6 +460,7 @@ a:hover {
     font-size: 16px;
   }
 }
+
 
 
 
