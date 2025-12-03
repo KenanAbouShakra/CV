@@ -34,21 +34,20 @@ body::before {
     "      uses: actions/setup-dotnet@v3\n"
     "    - name: Build\n"
     "      run: dotnet build --configuration Release";
-  
+
   white-space: pre;
   position: fixed;
-  top: 5%;
-  left: -10%;
-
+  top: 15%;      /* midt på skjermen */
+  left: 5%;      /* flyttes inn så det er synlig */
+  
   font-family: Consolas, "Fira Code", monospace;
-  font-size: 26px;
+  font-size: 30px;
 
-  opacity: 0.045;          /* subtil – nesten usynlig */
-  color: #2d3748;          /* mørk blågrå – DevOps stil */
+  opacity: 0.07;             /* LITT sterkere, men fortsatt subtil */
+  color: #2d3748;            /* mørk blågrå */
 
-  transform: rotate(-12deg);
-  width: 200%;
-  height: 200%;
+  transform: rotate(-8deg);
+  
   pointer-events: none;
   z-index: 0;
 }
@@ -467,4 +466,5 @@ a:hover {
     font-size: 16px;
   }
 }
+
 
