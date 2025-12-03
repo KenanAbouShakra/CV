@@ -27,40 +27,6 @@ body {
 
 /* ----- YAML BACKGROUND TEXT ----- */
 body::before {
-  content:
-    "name: enterprise-ci-cd\n"
-    "on:\n"
-    "  push:\n"
-    "    branches: [ main ]\n"
-    "  pull_request:\n"
-    "    branches: [ main ]\n\n"
-    "jobs:\n"
-    "  build:\n"
-    "    runs-on: ubuntu-latest\n"
-    "    steps:\n"
-    "      - uses: actions/checkout@v4\n"
-    "      - name: Setup .NET\n"
-    "        uses: actions/setup-dotnet@v4\n"
-    "      - name: Restore\n"
-    "        run: dotnet restore\n"
-    "      - name: Build\n"
-    "        run: dotnet build --configuration Release\n\n"
-    "  test:\n"
-    "    runs-on: ubuntu-latest\n"
-    "    needs: build\n"
-    "    steps:\n"
-    "      - uses: actions/checkout@v4\n"
-    "      - name: Run Tests\n"
-    "        run: dotnet test --no-build\n\n"
-    "  deploy:\n"
-    "    runs-on: ubuntu-latest\n"
-    "    needs: [ build, test ]\n"
-    "    steps:\n"
-    "      - name: Azure Login\n"
-    "        uses: azure/login@v2\n"
-    "      - name: Deploy App\n"
-    "        run: az webapp deploy --name myApp --src-path ./publish";
-  
   white-space: pre;
   position: fixed;
   top: 5%;
@@ -69,9 +35,8 @@ body::before {
   font-family: Consolas, 'Fira Code', monospace;
   font-size: 22px;
 
-  opacity: 0.11;                         /* 🔥 nå blir det synlig! */
-  color: #3b4252;                         /* mørk DevOps grå-blå */
-
+  opacity: 0.11;                         
+  color: #3b4252;                       
   transform: rotate(-12deg);
   width: 200%;
   height: 200%;
@@ -495,6 +460,7 @@ a:hover {
     font-size: 16px;
   }
 }
+
 
 
 
