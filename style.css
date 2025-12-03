@@ -10,29 +10,46 @@ html, body {
 
 body {
   font-family: 'Roboto', sans-serif;
-  color: #333333;
+  color: #333;
   font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 
-  /* Ren, profesjonell bakgrunn */
-  background: linear-gradient(135deg, #eef2f7, #dde7f1);
+  /* Lys–mørk DevOps bakgrunn (Azure/GitHub Actions vibes) */
+  background: linear-gradient(135deg, #f0f2f5, #d9dde4, #cfd4dd);
   background-attachment: fixed;
 
   position: relative;
 }
 
-/* Svak "kode-tekst" i bakgrunnen */
+/* Subtil YAML-kode i bakgrunnen */
 body::before {
-  content: "const engineer = { devOps: true, code: \"C#, Java, Azure\" };   pipeline.build().deploy(\"prod\");";
+  content: 
+    "name: CI-CD-Pipeline\n"
+    "on: [push]\n"
+    "jobs:\n"
+    "  build:\n"
+    "    runs-on: ubuntu-latest\n"
+    "    steps:\n"
+    "    - uses: actions/checkout@v3\n"
+    "    - name: Setup .NET\n"
+    "      uses: actions/setup-dotnet@v3\n"
+    "    - name: Build\n"
+    "      run: dotnet build --configuration Release";
+  
+  white-space: pre;
   position: fixed;
-  top: 10%;
-  left: -20%;
-  font-size: 80px;
-  opacity: 0.03;
-  white-space: nowrap;
-  pointer-events: none;
+  top: 5%;
+  left: -10%;
+
+  font-family: Consolas, "Fira Code", monospace;
+  font-size: 26px;
+
+  opacity: 0.045;          /* subtil – nesten usynlig */
+  color: #2d3748;          /* mørk blågrå – DevOps stil */
+
   transform: rotate(-12deg);
+  width: 200%;
+  height: 200%;
+  pointer-events: none;
   z-index: 0;
 }
 
@@ -450,3 +467,4 @@ a:hover {
     font-size: 16px;
   }
 }
+
